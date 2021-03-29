@@ -18,6 +18,6 @@ public class Clownfish extends Fish {
 
     @Override
     public String status() {
-        return getName() + ", "  + "weight: " + getWeight() + ", color: " + getColor() + ", " + "term memory loss: " + isMemoryLoss();
+        return getName() + ", "  + "weight: " + getWeight() + ", color: " + getColor() + ", " + "short term memory loss: " + isMemoryLoss();
     }
 }

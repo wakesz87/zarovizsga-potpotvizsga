@@ -12,11 +12,11 @@ public class Kong extends Fish {
 
     public void feed(){
         this.weight += 2;
-        this.memoryLoss = true;
+
     }
 
     @Override
     public String status() {
-        return getName() + ", "  + "weight: " + getWeight() + ", color: " + getColor() + ", " + "term memory loss: " + isMemoryLoss();
+        return getName() + ", "  + "weight: " + getWeight() + ", color: " + getColor() + ", " + "short term memory loss: " + isMemoryLoss();
     }
 }

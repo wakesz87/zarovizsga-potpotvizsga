@@ -9,14 +9,16 @@ package hu.nive.ujratervezes.zarovizsga.aquarium;
 public class Tang  extends Fish{
     public Tang(String name, int weight, String color) {
         super(name, weight, color);
+        this.memoryLoss = true;
     }
 
     public void feed(){
         this.weight += 1;
+        this.memoryLoss = true;
     }
 
     @Override
     public String status() {
-        return getName() + ", "  + "weight: " + getWeight() + ", color: " + getColor() + ", " + "term memory loss: " + isMemoryLoss();
+        return getName() + ", "  + "weight: " + getWeight() + ", color: " + getColor() + ", " + "short term memory loss: " + isMemoryLoss();
     }
 }
